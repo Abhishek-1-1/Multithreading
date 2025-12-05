@@ -12,7 +12,7 @@ public class BankAccount {
     }
 
 //    public synchronized void withdraw(int amount){     // synchronized keyword use
-        public void withdraw(int amount){
+        public void withdraw(int amount){               // adding own lock
 
         try {
             System.out.println(Thread.currentThread().getName() + " is attempting to acquire lock");
